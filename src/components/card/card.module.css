@@ -1,0 +1,10 @@
+.card_container {
+    border-radius: 10px;
+    padding: 20px;
+    filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.3));
+}
+
+.card_container:hover {
+    filter: drop-shadow(0px 2px 6px rgba(255, 255, 255, 0.5));
+    transition: ease-in 0.4s;
+}

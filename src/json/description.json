@@ -1,0 +1,32 @@
+{
+  "title": "¡Hola! Soy Justine Arriaga",
+  "subtitle": "Soy Ingeniero En Sistemas.",
+  "description": "Tengo 23 años y actualmente curso el sexto semestre de la carrera de Ingeniería en Sistemas en la Universidad Mariano Gálvez de Guatemala. Me desempeño como desarrollador frontend en Byte, donde participo en el desarrollo de la aplicación para su principal cliente: Banco Industrial, con presencia en Panamá, Honduras y El Salvador.",
+  "bigAvatar": "",
+  "socialMedia": [
+    {
+      "name": "Linkedln",
+      "file": "linkedln.svg",
+      "link": "https://www.linkedin.com/in/justine-arriaga-a4794715b/",
+      "id": "social1"
+    },
+    {
+      "name": "Twitter",
+      "file": "x.svg",
+      "link": "https://x.com/jusferkdev",
+      "id": "social2"
+    },
+    {
+      "name": "Github",
+      "file": "github.svg",
+      "link": "https://github.com/JusferK",
+      "id": "social3"
+    },
+    {
+      "name": "Facebook",
+      "file": "facebook.svg",
+      "link": "https://www.facebook.com/alexander.chester.56/",
+      "id": "social4"
+    }
+  ]
+}

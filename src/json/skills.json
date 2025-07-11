@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Desarrollo Front-end",
+    "description": "Tengo experiencia en el desarrollo de interfaces para aplicaciones web, móviles y de escritorio, aplicando principios de diseño UI/UX. Me enfoco en crear experiencias intuitivas, modernas y eficientes, cuidando tanto la estética como la usabilidad en cada plataforma.",
+    "stack": [
+      {
+        "type": "Web",
+        "technologies": [
+          {
+            "technology": "Angular",
+            "file": "angular.svg",
+            "id": "tec1"
+          },
+          {
+            "technology": "React",
+            "file": "react.svg",
+            "id": "tec2"
+          }
+        ]
+      },
+      {
+        "type": "Escritorio",
+        "technologies": [
+          {
+            "technology": "Java (swing)",
+            "file": "javaswing.svg",
+            "id": "tec3"
+          }
+        ]
+      },
+      {
+        "type": "Móvil",
+        "technologies": [
+          {
+            "technology": "Ionic",
+            "file": "ionic.svg",
+            "id": "tec4"
+          },
+          {
+            "technology": "React Native",
+            "file": "react.svg",
+            "id": "tec5"
+          }
+        ]
+      }
+    ],
+    "file": "frontend.svg",
+    "id": 1
+  },
+  {
+    "title": "Servidores",
+    "description": "Conocimiento en administración de servidores Linux, configuración de servicios, automatización, monitoreo y despliegue de aplicaciones. Enfocado en asegurar la estabilidad, seguridad y rendimiento de los entornos de producción.",
+    "file": "admin.svg",
+    "stack": [
+      {
+        "type":"Administracion",
+        "technologies": [
+          {
+            "technology": "Linux",
+            "file": "linux.svg",
+            "id": "tec8"
+          },
+          {
+            "technology": "Windows",
+            "file": "windows.svg",
+            "id": "tec9"
+          }
+        ]
+      }
+    ],
+    "id": 3
+  },
+  {
+    "title": "DevOps",
+    "description": "Ingeniero con enfoque DevOps: automatización de despliegues, integración continua, gestión de infraestructura y monitoreo de entornos productivos.",
+    "file": "devops.svg",
+    "stack": [
+      {
+        "type": "DevOps",
+        "technologies": [
+          {
+            "technology": "Jenkins",
+            "file": "jenkins.svg",
+            "id": "tec10"
+          },
+          {
+            "technology": "Docker",
+            "file": "docker.svg",
+            "id": "tec11"
+          }
+        ]
+      }
+    ],
+    "id": 4
+  },
+  {
+    "title": "Desarrollo Back-end",
+    "description": "Tengo experiencia en la creación de APIs REST seguras y eficientes para integrar servicios. Aplico buenas prácticas de autenticación, persistencia e integridad de datos, garantizando transacciones confiables y un flujo de información sólido entre aplicaciones.",
+    "file": "backend.svg",
+    "stack": [
+      {
+        "type":"API Restful",
+        "technologies": [
+          {
+            "technology": "Java (spring framework)",
+            "file": "spring.svg",
+            "id": "tec6"
+          },
+          {
+            "technology": "Javascript/Typescript (Express.js)",
+            "file": "expressjs.svg",
+            "id": "tec7"
+          }
+        ]
+      }
+    ],
+    "id": 2
+  }
+]
