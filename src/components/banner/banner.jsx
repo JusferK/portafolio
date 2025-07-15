@@ -1,19 +1,26 @@
 import styles from './banner.module.css';
-import Description from '../../json/description.json';
+import profileDescription from '../../util/description-json-method-adder.js';
 import LinkedinIcon from '../../assets/svg/linkedln.svg';
 import TwitterIcon from '../../assets/svg/x.svg';
 import GithubIcon from '../../assets/svg/github.svg';
-import FacebookIcon from '../../assets/svg/facebook.svg';
+import MailIcon from '../../assets/svg/mail.svg';
+import WhatsappIcon from '../../assets/svg/whatsapp.svg';
+import Cv from '../../assets/svg/cv.svg';
 import Me from '../../assets/png/big_avatar.png';
-import { useState } from "react";
+import {  useState } from "react";
+
+import 'primeicons/primeicons.css';
+
 
 const Banner = () => {
-    const [description] = useState(Description);
+    const [description] = useState(profileDescription);
     const [iconMap] = useState({
         'linkedln.svg': LinkedinIcon,
         'x.svg': TwitterIcon,
         'github.svg': GithubIcon,
-        'facebook.svg': FacebookIcon
+        'mail.svg': MailIcon,
+        'whatsapp.svg': WhatsappIcon,
+        'cv.svg': Cv
     });
 
     const Title = () => {
@@ -46,7 +53,8 @@ const Banner = () => {
                                 <div
                                     key={item.id}
                                     className={styles.social_media_card}
-                                    onClick={() => window.open(item.link, '_blank', 'noopener, noreferrer')}
+                                    onClick={() => item.clickHandler(item)}
+                                    role="button"
                                 >
                                     <img
                                         key={item.name}

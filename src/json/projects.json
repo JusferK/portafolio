@@ -1,7 +1,7 @@
 [
   {
     "name": "Aplicación para entidad financiera",
-    "description": "Actualmente desarrollo el frontend para una entidad financiera para la cual es una de las mas grandes de la region, y es un constante aprendizaje para mi ya que se aplican soluciones reales y veo lo que el mercado necesita, principalmente para la aplicacion de Panamá. Debido a temas de confidencialidad, no puedo mostrar la aplicación.",
+    "description": "Actualmente, me desempeño como Desarrollador Frontend en una de las principales entidades financieras de la región. Este rol me permite un crecimiento constante, ya que implica la implementación de soluciones tecnológicas alineadas con las demandas del mercado, particularmente adaptadas al contexto panameño. Por razones de confidencialidad, no es posible divulgar detalles específicos del proyecto.",
     "reason": "Trabajo",
     "stack": [
       {
@@ -18,7 +18,7 @@
   },
   {
     "name": "Aplicación, ERP y Backend Para Restaurante",
-    "description": "Este fue el proyecto que mas me ha dejado marcado, ya que tuve que aprender por mi cuenta como funciona un backend y un frontend. Este proyecto me mostro como se hacen las conexiones entre aplicaciones y el mundo de posibilidades que se pueden hacer. En este proyecto aprendi a usar el framework de spring, angular y ionic siendo esto muy importante ya que luego gracias a esto, Angular me ayudo a conseguir mi primer empleo como desarrollador frontend.",
+    "description": "Este ha sido el proyecto que más me ha marcado, ya que tuve que aprender por mi cuenta el funcionamiento del backend y el frontend. A través de él, descubrí cómo se establecen las conexiones entre aplicaciones y el amplio abanico de posibilidades que esto ofrece. Durante su desarrollo, adquirí habilidades en el uso de frameworks como Spring, Angular e Ionic, conocimientos que resultaron fundamentales para mi crecimiento profesional. De hecho, fue gracias a mi experiencia con Angular que conseguí mi primer empleo como desarrollador frontend.",
     "reason": "Programación II, proyecto final",
     "stack": [
       {
@@ -83,7 +83,7 @@
   },
   {
     "name": "Gestor de cursos para universidad",
-    "description": "En este proyecto aplique conocimientos aprendidos en mi primer trabajo, haciendo asi una base muy solida de codigo y de arquitectura. Este proyecto mas bien me sirvio para aplicar mis conocimientos y fortalecerlos tanto en el frontend como en el backend.",
+    "description": "En este proyecto, apliqué los conocimientos adquiridos en mi primera experiencia laboral, lo que me permitió establecer una base sólida tanto en la arquitectura como en el desarrollo del código. Esta iniciativa representó una valiosa oportunidad para consolidar y fortalecer mis habilidades, aplicándolas tanto en el ámbito del frontend como del backend.",
     "reason": "Programación III, proyecto final",
     "stack": [
       {
@@ -118,7 +118,7 @@
   },
   {
     "name": "Optimización Cálculo",
-    "description": "En este proyecto aplique reglas de derivación para el calculo del problema descrito (se encuentra en el README.md del proyecto) y lo hice con javascript, html y css puro, sin ningún framework.",
+    "description": "En este proyecto implementé reglas de derivación matemática para resolver el problema planteado (detallado en el README.md del repositorio). Desarrollé la solución utilizando JavaScript, HTML y CSS nativos, sin emplear frameworks externos, lo que me permitió profundizar en los fundamentos de estos lenguajes web.",
     "reason": "Cálculo I, proyecto final",
     "stack": [
       {
@@ -152,7 +152,7 @@
   },
   {
     "name": "Punto de ebullicion",
-    "description": "Para este proyecto use next.js y haciendo uso de sus API Routes directamente. Matlab en si no tiene 'frontend' pero lo que hice fue hacerle una interfaz y segun el liquido, puedo mandar parametros al backend para poder ejecutar el script de matlab segun los parametros que recibe por consola y en tiempo real muestra el resultado de consola. Para este proyecto use el metodo de newton-raphson para poder determinar el punto mas exacto de ebullicion de un liquido.",
+    "description": "En este proyecto implementé una solución utilizando Next.js, aprovechando sus API Routes para la comunicación entre frontend y backend. Aunque MATLAB no cuenta con capacidades nativas de frontend, desarrollé una interfaz personalizada que permite: \n \n • Enviar parámetros específicos al backend según el líquido seleccionado \n \n • Ejecutar scripts de MATLAB con los parámetros recibidos vía línea de comandos \n \n • Visualizar los resultados de la consola en tiempo real \n \n • Como parte fundamental del desarrollo, implementé el método numérico Newton-Raphson para calcular con alta precisión el punto de ebullición de diferentes líquidos.",
     "reason": "Métodos numéricos, proyecto final",
     "stack": [
       {
@@ -182,7 +182,7 @@
   },
   {
     "name": "Plataforma De Administración De Cursos",
-    "description": "Este proyecto me ayudo a fortalecer mi lógica de programación, entender mas sobre como funciona POO y conectar con el lenguaje java.",
+    "description": "Plataforma de Administración de Cursos \n \n• Desarrollo de lógica algorítmica avanzada \n• Implementación profunda de paradigmas POO \n• Dominio de características específicas de Java \n \n Resultado: Base sólida para desarrollo de software robusto.",
     "reason": "Programación I, proyecto final",
     "stack": [
       {

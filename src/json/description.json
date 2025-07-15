@@ -21,6 +21,24 @@
       "file": "github.svg",
       "link": "https://github.com/JusferK",
       "id": "social3"
+    },
+    {
+      "name": "Whatsapp",
+      "file": "whatsapp.svg",
+      "link": "",
+      "id": "social5"
+    },
+    {
+      "name": "Mail",
+      "file": "mail.svg",
+      "link": "",
+      "id": "social4"
+    },
+    {
+      "name": "Curriculum",
+      "file": "cv.svg",
+      "link": "",
+      "id": "social6"
     }
   ]
 }
