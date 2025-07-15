@@ -53,7 +53,7 @@
     "file": "admin.svg",
     "stack": [
       {
-        "type":"Administracion",
+        "type":"Administración",
         "technologies": [
           {
             "technology": "Linux",
@@ -87,6 +87,11 @@
             "technology": "Docker",
             "file": "docker.svg",
             "id": "tec11"
+          },
+          {
+            "technology": "Git",
+            "file": "git.svg",
+            "id": "tec1310731"
           }
         ]
       }

@@ -12,7 +12,7 @@
 .skills_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 3%;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .skill_container h4 {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .stack_subcontainer {
@@ -60,6 +60,7 @@
 }
 
 .type_style {
+    color: red;
     text-decoration: underline;
 }
 

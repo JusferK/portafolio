@@ -1,0 +1,13 @@
+.footer {
+    margin-top: 2%;
+}
+
+.footer_container {
+    background-color: black;
+    height: 10vw;
+    padding: 1vw;
+}
+
+.footer_container p {
+    background-color: transparent;
+}

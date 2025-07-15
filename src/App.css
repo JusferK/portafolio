@@ -6,4 +6,56 @@
   box-sizing: border-box;
   background-color: #28242c;
   color: white;
+  scroll-behavior: smooth;
+}
+
+.p-progress-spinner-svg {
+  background-color: transparent !important;
+}
+
+.p-progress-spinner-svg circle {
+  stroke: red !important;
+}
+
+.p-tabview-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.p-tabview-title {
+  margin-bottom: 0.5rem;
+}
+
+.p-tabview .p-tabview-nav {
+  border-bottom: 1px solid white;
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link,
+.p-tabview .p-tabview-nav li:not(.p-highlight):not(.p-disabled):hover .p-tabview-nav-link {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.prime_modal {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    scale: 1;
+  }
+}
+
+
+.block {
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }

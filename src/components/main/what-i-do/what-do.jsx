@@ -4,38 +4,18 @@ import FrontEnd from '../../../assets/svg/frontend.svg';
 import BackEnd from '../../../assets/svg/backend.svg';
 import Admin from '../../../assets/svg/admin.svg';
 import Devops from '../../../assets/svg/devops.svg';
-import Angular from '../../../assets/svg/angular.svg';
-import React from '../../../assets/svg/react.svg';
-import Spring from '../../../assets/svg/spring.svg';
-import Expressjs from '../../../assets/svg/expressjs.svg';
-import JavaSwing from '../../../assets/svg/javaswing.svg';
-import Ionic from '../../../assets/svg/ionic.svg';
-import Linux from '../../../assets/svg/linux.svg';
-import Windows from '../../../assets/svg/windows.svg';
-import Jenkins from '../../../assets/svg/jenkins.svg';
-import Docker from '../../../assets/svg/docker.svg';
 import { useState } from "react";
 import Card from "../../card/card.jsx";
-
-const technologiesKeys = {
-    'jenkins.svg': Jenkins,
-    'windows.svg': Windows,
-    'linux.svg': Linux,
-    'ionic.svg': Ionic,
-    'javaswing.svg': JavaSwing,
-    'expressjs.svg': Expressjs,
-    'spring.svg': Spring,
-    'react.svg': React,
-    'angular.svg': Angular,
-    'docker.svg': Docker,
-};
+import { technologiesKeys } from "../../../util/util.js";
 
 const WhatIDo = () => {
+
     const [skills] = useState(Skills);
+
     return (
         <section className={styles.main_body_container}>
             <div className={styles.main_title}>
-                <p>¿Qué hago?</p>
+                <p>Habilidades</p>
             </div>
             <article className={styles.skills_container}>
                 {skills.map((skill) => {
@@ -107,6 +87,6 @@ const Stack = ({ props }) => {
             </div>
         </>
     );
-}
+};
 
 export default WhatIDo;

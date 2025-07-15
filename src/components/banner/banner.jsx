@@ -51,6 +51,7 @@ const Banner = () => {
                                     <img
                                         key={item.name}
                                         alt={item.name}
+                                        loading="lazy"
                                         src={iconMap[item.file]}
                                         style={{ height: '30px', width: '30px' }}
                                     />

@@ -1,0 +1,216 @@
+[
+  {
+    "name": "Aplicación para entidad financiera",
+    "description": "Actualmente desarrollo el frontend para una entidad financiera para la cual es una de las mas grandes de la region, y es un constante aprendizaje para mi ya que se aplican soluciones reales y veo lo que el mercado necesita, principalmente para la aplicacion de Panamá. Debido a temas de confidencialidad, no puedo mostrar la aplicación.",
+    "reason": "Trabajo",
+    "stack": [
+      {
+        "technology": "Angular",
+        "file": "angular.svg",
+        "id": "tec1"
+      }
+    ],
+    "content": {
+      "images": ["banca.png"],
+      "video": []
+    },
+    "link": []
+  },
+  {
+    "name": "Aplicación, ERP y Backend Para Restaurante",
+    "description": "Este fue el proyecto que mas me ha dejado marcado, ya que tuve que aprender por mi cuenta como funciona un backend y un frontend. Este proyecto me mostro como se hacen las conexiones entre aplicaciones y el mundo de posibilidades que se pueden hacer. En este proyecto aprendi a usar el framework de spring, angular y ionic siendo esto muy importante ya que luego gracias a esto, Angular me ayudo a conseguir mi primer empleo como desarrollador frontend.",
+    "reason": "Programación II, proyecto final",
+    "stack": [
+      {
+        "technology": "Angular",
+        "file": "angular.svg",
+        "id": "tec1"
+      },
+      {
+        "technology": "Ionic",
+        "file": "ionic.svg",
+        "id": "tec4"
+      },
+      {
+        "technology": "Java (spring framework)",
+        "file": "spring.svg",
+        "id": "tec6"
+      }
+    ],
+    "content": {
+      "images": [
+        "progra_2_final_1.png",
+        "progra_2_final_2.png",
+        "progra_2_final_3.png",
+        "progra_2_final_4.png",
+        "progra_2_final_5.png",
+        "progra_2_final_6.png",
+        "progra_2_final_7.png",
+        "progra_2_final_8.png",
+        "progra_2_final_9.png",
+        "progra_2_final_10.png",
+        "progra_2_final_11.png",
+        "progra_2_final_12.png",
+        "progra_2_final_13.png",
+        "progra_2_final_14.png",
+        "progra_2_final_15.png",
+        "progra_2_final_16.png",
+        "progra_2_final_17.png",
+        "progra_2_final_18.png",
+        "progra_2_final_19.png",
+        "progra_2_final_20.png",
+        "progra_2_final_21.png",
+        "progra_2_final_22.png",
+        "progra_2_final_23.png",
+        "progra_2_final_24.png",
+        "progra_2_final_25.png",
+        "progra_2_final_26.png",
+        "progra_2_final_27.png",
+        "progra_2_final_28.png",
+        "progra_2_final_29.png",
+        "progra_2_final_30.png"
+      ],
+      "video": [
+        "https://1drv.ms/v/c/3a73e13811d92284/IQRTsaP0hSs_Rrj4Ue73osjQAVBZP0x40wvjLDR_FGbCf5I?width=1920&height=1080",
+        "https://1drv.ms/v/c/3a73e13811d92284/IQTJfFegeEs_Q7nWg_HY9JqIAX_yjnGclNHASuHI8oSVnfw?width=1080&height=2520"
+      ]
+    },
+    "link": [
+      "https://github.com/JusferK/dev_grill-api",
+      "https://github.com/JusferK/dev_grill_restaurant",
+      "https://github.com/JusferK/dev_grill_customer"
+    ]
+  },
+  {
+    "name": "Gestor de cursos para universidad",
+    "description": "En este proyecto aplique conocimientos aprendidos en mi primer trabajo, haciendo asi una base muy solida de codigo y de arquitectura. Este proyecto mas bien me sirvio para aplicar mis conocimientos y fortalecerlos tanto en el frontend como en el backend.",
+    "reason": "Programación III, proyecto final",
+    "stack": [
+      {
+        "technology": "Angular",
+        "file": "angular.svg",
+        "id": "tec1"
+      },
+      {
+        "technology": "Java (spring framework)",
+        "file": "spring.svg",
+        "id": "tec6"
+      }
+    ],
+    "content": {
+      "images": [
+        "progra_3_1.png",
+        "progra_3_2.png",
+        "progra_3_3.png",
+        "progra_3_4.png",
+        "progra_3_5.png",
+        "progra_3_6.png",
+        "progra_3_7.png"
+      ],
+      "video": [
+        "https://1drv.ms/v/c/3a73e13811d92284/IQSldq1PzxowT4kOUs_QDA7MAfOE17-Q0ECay9eiBy6s8II?width=3840&height=2160"
+      ]
+    },
+    "link": [
+      "https://github.com/JusferK/university_front_end",
+      "https://github.com/JusferK/proyecto_final_backend_progra_III"
+    ]
+  },
+  {
+    "name": "Optimización Cálculo",
+    "description": "En este proyecto aplique reglas de derivación para el calculo del problema descrito (se encuentra en el README.md del proyecto) y lo hice con javascript, html y css puro, sin ningún framework.",
+    "reason": "Cálculo I, proyecto final",
+    "stack": [
+      {
+        "technology": "Javascript",
+        "file": "js.svg",
+        "id": "tec6067"
+      },
+      {
+        "technology": "Html",
+        "file": "html.svg",
+        "id": "tec755"
+      },
+      {
+        "technology": "Css",
+        "file": "css.svg",
+        "id": "tec8775"
+      }
+    ],
+    "content": {
+      "images": [
+        "calculo_1_1.png",
+        "calculo_1_2.png"
+      ],
+      "video": [
+        "https://1drv.ms/v/c/3a73e13811d92284/IQTz_uvzfDawTq4iM5cJ41N3AW1QanvKv_NPBZATG5AlM5I?width=1920&height=1080"
+      ]
+    },
+    "link": [
+      "https://github.com/JusferK/Calculo_proyecto_final.github.io"
+    ]
+  },
+  {
+    "name": "Punto de ebullicion",
+    "description": "Para este proyecto use next.js y haciendo uso de sus API Routes directamente. Matlab en si no tiene 'frontend' pero lo que hice fue hacerle una interfaz y segun el liquido, puedo mandar parametros al backend para poder ejecutar el script de matlab segun los parametros que recibe por consola y en tiempo real muestra el resultado de consola. Para este proyecto use el metodo de newton-raphson para poder determinar el punto mas exacto de ebullicion de un liquido.",
+    "reason": "Métodos numéricos, proyecto final",
+    "stack": [
+      {
+        "technology": "Next.js",
+        "file": "nextjs.svg",
+        "id": "tec122"
+      },
+      {
+        "technology": "Matlab",
+        "file": "matlab.svg",
+        "id": "tec578"
+      }
+    ],
+    "content": {
+      "images": [
+        "metodos_numericos_1.png",
+        "metodos_numericos_2.png",
+        "metodos_numericos_3.png"
+      ],
+      "video": [
+        "https://1drv.ms/v/c/3a73e13811d92284/IQTxtfdajIFdTY4-jb-QhABWAUi6nEX-L0JQ13L0qI3vLJc?width=1920&height=1080"
+      ]
+    },
+    "link": [
+      "https://github.com/JusferK/metodos_numericos_scrip_caller"
+    ]
+  },
+  {
+    "name": "Plataforma De Administración De Cursos",
+    "description": "Este proyecto me ayudo a fortalecer mi lógica de programación, entender mas sobre como funciona POO y conectar con el lenguaje java.",
+    "reason": "Programación I, proyecto final",
+    "stack": [
+      {
+        "technology": "Java (swing)",
+        "file": "javaswing.svg",
+        "id": "tec3"
+      }
+    ],
+    "content": {
+      "images": [
+        "gestor_universidad_java_1.png",
+        "gestor_universidad_java_2.png",
+        "gestor_universidad_java_3.png",
+        "gestor_universidad_java_4.png",
+        "gestor_universidad_java_5.png",
+        "gestor_universidad_java_6.png",
+        "gestor_universidad_java_7.png",
+        "gestor_universidad_java_8.png",
+        "gestor_universidad_java_9.png",
+        "gestor_universidad_java_10.png",
+        "gestor_universidad_java_11.png"
+      ],
+      "video": [
+        "https://1drv.ms/v/c/3a73e13811d92284/IQQL6QR5_JrOSbJ7vuL24ZvmAUyeiNA5UeWl4fzobGiZieM?width=1920&height=1200"
+      ]
+    },
+    "link": [
+      "https://github.com/JusferK/Sistema_de_administracion_de_cursos"
+    ]
+  }
+]
