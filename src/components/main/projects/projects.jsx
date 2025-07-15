@@ -59,15 +59,59 @@ export const Stack = ({ props }) => {
 };
 
 const Project = ({ props }) => {
-    const { name, description, reason, stack  } = props;
+    const { name, description, reason, stack, link  } = props;
     return (
         <div className={styles.project_container}>
             <h2>{name}</h2>
             <p className={styles.description_paragraph}>{description}</p>
             <p className={styles.project_reason}>Motivo del proyecto: {reason}</p>
             <Stack props={stack}/>
+            <Links props={link}/>
         </div>
     );
+};
+
+const Links = ({ props }) => {
+
+    const clickHandler = (event, link) => {
+        window.open(link, '_blank');
+        event.stopPropagation();
+    };
+
+    return (
+        <section style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '10px',
+            alignSelf: 'center',
+            justifyContent: 'center',
+            alignItems: 'center',
+        }}>
+            <p>{props.length > 1 ? 'Links' : 'Link'} para el codigo:</p>
+            {props.length > 0 ? (
+                <ul
+                    style={{
+                        display: 'flex',
+                        listStyleType: 'none',
+                        gap: '2rem',
+                    }}
+                >
+                    {props.map((link, index) => (
+                        <li
+                            key={link}
+                            onClick={(event) => clickHandler(event, link)}
+                            className={styles.links_items}
+                        >
+                            Link {props.length > 1 ? (index + 1) : ''}
+                        </li>
+                    ))}
+                </ul>
+            ) : (
+                <p style={{ color: 'red' }}>No hay links disponibles.</p>
+            )}
+        </section>
+    );
+
 };
 
 export default Projects;

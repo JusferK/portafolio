@@ -9,6 +9,10 @@
   scroll-behavior: smooth;
 }
 
+.p-tabview-panels {
+  height: 100%;
+}
+
 .p-progress-spinner-svg {
   background-color: transparent !important;
 }
@@ -25,6 +29,7 @@
 
 .p-tabview-title {
   margin-bottom: 0.5rem;
+  padding: 3px;
 }
 
 .p-tabview .p-tabview-nav {
@@ -58,4 +63,10 @@
   animation: appear 1s linear;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
+}
+
+@media (max-width: 700px) {
+  .block {
+    animation: none;
+  }
 }

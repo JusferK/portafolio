@@ -49,15 +49,6 @@ const ProjectTab = ({ props }) => {
 };
 
 const ImageTemplate = (props) => {
-    const [isImageMobile, setIsImageMobile] = useState(false);
-
-    useEffect(() => {
-        const img = new Image();
-        img.src = projectImages[props];
-        img.onload = () => {
-            if (img.width < 450) setIsImageMobile(true);
-        };
-    }, []);
 
     return (
         <div className={styles.carousel_container}>
@@ -67,7 +58,8 @@ const ImageTemplate = (props) => {
                 loading="lazy"
                 style={{
                     objectFit: 'contain',
-                    width: `${ isImageMobile ? '27%' : '80%' }`,
+                    width: '95%',
+                    height: '100%',
                 }}
             />
         </div>

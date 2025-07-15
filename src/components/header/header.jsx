@@ -5,10 +5,10 @@ const Header = ({ props }) => {
     return (
         <header className={styles.header_style}>
             <section>
-                <div className={styles.avatar_wrapper}>
+                <div className={styles.avatar_wrapper} >
                     <img src={avatar} alt="me" />
                 </div>
-                <a href="#SobreMi">Justine</a>
+                <a  href="#SobreMi">Justine</a>
             </section>
             <nav className={styles.nav_links}>
                 <a

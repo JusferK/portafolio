@@ -1,4 +1,4 @@
-import './main-frame-component.css';
+import styles from './main-frame-component.module.css';
 import Header from "./header/header.jsx";
 import Banner from "./banner/banner.jsx";
 import React from "../assets/svg/react.svg";
@@ -71,8 +71,7 @@ const MainFrameComponent = () => {
                     breakpoints={{ '576px': '95vw', '768px': '85vw' }}
                     draggable={false}
                     modal={true}
-                    className="custom-modal"
-                    style={{ width: '65vw', height: '45vw' }}
+                    className={styles.modal_style}
                     blockScroll={true}
                 >
                     <ProjectTab props={{ project }}/>

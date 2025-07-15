@@ -1,13 +1,26 @@
 .footer {
     margin-top: 2%;
+    width: 100%;
+    height: fit-content;
+
 }
 
 .footer_container {
     background-color: black;
-    height: 10vw;
-    padding: 1vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .footer_container p {
     background-color: transparent;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        margin-top: 20%;
+        padding-top: 40%;
+    }
 }

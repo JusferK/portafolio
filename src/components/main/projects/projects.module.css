@@ -44,6 +44,14 @@
     place-self: center;
 }
 
+.languages_container_subcontainer p {
+    place-self: center;
+}
+
+.links_items:hover {
+    text-shadow: 1px 1px 2px red;
+}
+
 .project_container {
     display: flex;
     flex-direction: column;
@@ -61,4 +69,60 @@
 
 .description_paragraph {
     white-space: pre-line;
+}
+
+@media (max-width: 1200px) {
+    .projects_container {
+        margin: 3%;
+    }
+
+    .projects_cards_container {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .main_title {
+        text-align: center !important;
+        font-size: 35px !important;
+    }
+
+    .projects_container {
+        margin: 15px;
+        gap: 1rem;
+    }
+
+    .projects_cards_container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .project_container h2 {
+        font-size: 18px !important;
+        text-align: center;
+    }
+
+    .description_paragraph {
+        font-size: 15px !important;
+    }
+
+    .stack_subcontainer {
+        gap: 7px !important;
+    }
+
+    .languages_container_subcontainer p {
+        font-size: 15px !important;
+    }
+
+    .languages_container_subcontainer img {
+        height: 60px !important;
+        width: 60px !important;
+    }
+
+    .project_reason {
+        align-self: center;
+    }
+
 }

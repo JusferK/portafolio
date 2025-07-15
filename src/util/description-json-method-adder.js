@@ -1,5 +1,6 @@
 import description from '../../src/json/description.json';
-import cvPdf from '../assets/pdf/cv _justine_english.pdf';
+import cvPdfEng from '../assets/pdf/cv _justine_english.pdf';
+import cvPdfEsp from '../assets/pdf/cv_justine_spanish.pdf';
 
 const profileDescription = description;
 
@@ -23,15 +24,30 @@ const getMethodHandler = (socialMedia) => {
 }
 
 const downloadCv = async () => {
+
+    const idioma = prompt("¿Qué versión del CV quieres? (es/en)");
+
     const link = document.createElement('a');
-    link.href = cvPdf;
-    link.download = 'cv_justine_ingles.pdf';
+
+    if (idioma === "es") {
+        link.href = cvPdfEsp;
+        link.download = 'cv_justine_spanish.pdf';
+    } else if (idioma === "en") {
+        link.href = cvPdfEng;
+        link.download = 'cv_justine_ingles.pdf';
+    } else {
+        alert("Opción no válida. Intenta con 'es' o 'en'.");
+        return;
+    }
+
+
     link.style.display = 'none';
     document.body.appendChild(link);
     link.click();
 
     document.body.removeChild(link);
     URL.revokeObjectURL(pdfUrl);
+
 };
 
 const openWindow = (item) => window.open(item.link, '_blank', 'noopener, noreferrer');

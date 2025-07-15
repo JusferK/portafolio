@@ -71,7 +71,9 @@ const Stack = ({ props }) => {
                                 {technologies.map(({ technology, file, id }) => {
                                     return (
                                         <div key={id} className={styles.languages_container_subcontainer}>
-                                            <p>{technology}</p>
+                                            <p
+                                                className={styles.paragraph_description_from_subcontainer}
+                                            >{technology}</p>
                                             <img
                                                 src={technologiesKeys[file]}
                                                 alt={technology}

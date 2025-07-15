@@ -7,12 +7,14 @@ import MailIcon from '../../assets/svg/mail.svg';
 import WhatsappIcon from '../../assets/svg/whatsapp.svg';
 import Cv from '../../assets/svg/cv.svg';
 import Me from '../../assets/png/big_avatar.png';
-import {  useState } from "react";
+import MeSmall from '../../assets/png/big_avatar_small.png';
+import { useEffect, useState } from "react";
 
 import 'primeicons/primeicons.css';
 
 
 const Banner = () => {
+
     const [description] = useState(profileDescription);
     const [iconMap] = useState({
         'linkedln.svg': LinkedinIcon,
@@ -20,8 +22,9 @@ const Banner = () => {
         'github.svg': GithubIcon,
         'mail.svg': MailIcon,
         'whatsapp.svg': WhatsappIcon,
-        'cv.svg': Cv
+        'cv.svg': Cv,
     });
+    const [isMobile, setMobile] = useState(false);
 
     const Title = () => {
         const verbToBe = description.title.indexOf('y');
@@ -29,6 +32,12 @@ const Banner = () => {
         const name = description.title.substring((verbToBe + 2), description.title.length);
         return <h1 className={styles.title_style}>{conjunction} <span style={{color: 'red'}}>{name}</span></h1>;
     };
+
+    useEffect(() => {
+        window.addEventListener('resize', () => setMobile(window.innerWidth < 880));
+    }, []);
+
+    useEffect(() => console.log(isMobile), [isMobile])
 
     return (
         <header className={styles.banner}>
@@ -61,7 +70,10 @@ const Banner = () => {
                                         alt={item.name}
                                         loading="lazy"
                                         src={iconMap[item.file]}
-                                        style={{ height: '30px', width: '30px' }}
+                                        style={{
+                                            height: '30px',
+                                            width: '30px'
+                                        }}
                                     />
                                 </div>
                             );
@@ -69,7 +81,7 @@ const Banner = () => {
                     </div>
                 </div>
             </section>
-            <img src={Me} alt="Justine Arriaga"/>
+            <img className={styles.banner_image} src={isMobile ? MeSmall : Me} alt="Justine Arriaga"/>
         </header>
     );
 };
