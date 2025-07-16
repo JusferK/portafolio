@@ -37,8 +37,6 @@ const Banner = () => {
         window.addEventListener('resize', () => setMobile(window.innerWidth < 880));
     }, []);
 
-    useEffect(() => console.log(isMobile), [isMobile])
-
     return (
         <header className={styles.banner}>
             <section className={styles.section_one}>
@@ -70,10 +68,7 @@ const Banner = () => {
                                         alt={item.name}
                                         loading="lazy"
                                         src={iconMap[item.file]}
-                                        style={{
-                                            height: '30px',
-                                            width: '30px'
-                                        }}
+                                        className={styles.custom_target_icon}
                                     />
                                 </div>
                             );

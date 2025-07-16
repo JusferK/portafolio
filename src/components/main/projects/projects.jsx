@@ -1,7 +1,7 @@
 import styles from './projects.module.css';
 import Data from '../../../json/projects.json';
 import Card from "../../card/card.jsx";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import React from "../../../assets/svg/react.svg";
 import { technologiesKeys } from "../../../util/util.js";
 

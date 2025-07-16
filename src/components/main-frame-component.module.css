@@ -5,6 +5,10 @@ main {
     gap: 1rem;
 }
 
+h1, h2, h3, h4, h5, h6, p, li, ul {
+    overflow: hidden;
+}
+
 .p-dialog-resizable {
     background-color: rgba(0, 0, 0, 0.8) !important;
 }
@@ -27,6 +31,6 @@ main {
     }
 
     .modal_style {
-        height: 80vh;
+        height: 90vh;
     }
 }

@@ -29,10 +29,10 @@ const downloadCv = async () => {
 
     const link = document.createElement('a');
 
-    if (idioma === "es") {
+    if (idioma.toLowerCase() === "es") {
         link.href = cvPdfEsp;
         link.download = 'cv_justine_spanish.pdf';
-    } else if (idioma === "en") {
+    } else if (idioma.toLowerCase() === "en") {
         link.href = cvPdfEng;
         link.download = 'cv_justine_ingles.pdf';
     } else {

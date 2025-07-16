@@ -5,12 +5,18 @@ import React from "../../assets/svg/react.svg";
 import { Carousel } from "primereact/carousel";
 import { projectImages } from "../../util/util.js";
 import { ProgressSpinner } from 'primereact/progressspinner';
+import { Image as PrimeImage } from 'primereact/image';
 
 
 const ProjectTab = ({ props }) => {
 
     const { project } = props;
     const { content } = project;
+    const [useBiggerContainer, setUseBiggerContainer] = useState(false);
+
+    useEffect(() => {
+        setUseBiggerContainer(content.images.length > 10);
+    }, [props])
 
     return (
       <div className={styles.project_tab_container}>
@@ -26,6 +32,7 @@ const ProjectTab = ({ props }) => {
                           numVisible={1}
                           numScroll={1}
                           itemTemplate={ImageTemplate}
+                          className={`${useBiggerContainer ? styles.bigger_container : ''}`}
                       />
                   </section>
               </TabPanel>
@@ -50,17 +57,32 @@ const ProjectTab = ({ props }) => {
 
 const ImageTemplate = (props) => {
 
+    const [imageIsMobile, setImageIsMobile] = useState(false);
+
+    useEffect(() => {
+        const imageUrl = projectImages[props];
+        if (!imageUrl) return;
+
+        const img = new Image();
+        img.src = imageUrl;
+
+        img.onload = () => {
+            setImageIsMobile(img.width < 500);
+        };
+
+
+    }, [props]);
+
     return (
         <div className={styles.carousel_container}>
-            <img
+            <PrimeImage
                 src={projectImages[props]}
                 alt='imagen del proyecto'
                 loading="lazy"
-                style={{
-                    objectFit: 'contain',
-                    width: '95%',
-                    height: '100%',
-                }}
+                width="100%"
+                height={imageIsMobile ? '80%' : '100%'}
+                imageStyle={{ objectFit: 'contain' }}
+                preview={true}
             />
         </div>
     );
@@ -68,7 +90,6 @@ const ImageTemplate = (props) => {
 
 const VideoTemplate = (props) => {
     const [isLoading, setIsLoading] = useState(true);
-    useEffect(() => console.log(props), []);
 
     return (
         <div className={styles.carousel_container}>

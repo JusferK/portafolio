@@ -73,6 +73,11 @@
     justify-content: start;
 }
 
+.custom_target_icon {
+    height: 30px;
+    width: 30px;
+}
+
 .social_media_card {
     padding: .5rem;
     border-radius: 5px;
@@ -98,8 +103,6 @@
     .social_media_container {
         background-color: transparent;
     }
-
-
 
 }
 

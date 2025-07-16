@@ -65,12 +65,22 @@
         justify-content: center;
     }
 
+    .information_container section {
+        height: 100%;
+    }
+
+    .bigger_container ul  {
+        height: 20% !important;
+    }
+
     .project_tab_container {
         padding: 10px;
     }
 
     .carousel_container {
         height: 100%;
+        padding: 0;
+        margin: 0;
     }
 
 }
