@@ -1,5 +1,5 @@
 import './App.css';
-import MainFrameComponent from "./components/main-frame-component.jsx";
+import MainFrameComponent from "./components/main-frame-component";
 import { PrimeReactProvider } from 'primereact/api';
 
 

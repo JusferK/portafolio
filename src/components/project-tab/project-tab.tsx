@@ -1,29 +1,28 @@
 import { TabView, TabPanel } from 'primereact/tabview';
 import { useEffect, useState } from "react";
 import styles from './project-tab.module.css';
-import React from "../../assets/svg/react.svg";
 import { Carousel } from "primereact/carousel";
-import { projectImages } from "../../util/util.js";
+import { projectImages } from "../../util/util";
 import { ProgressSpinner } from 'primereact/progressspinner';
 import { Image as PrimeImage } from 'primereact/image';
+import type { ProjectType } from '../../type/project.type';
 
 
-const ProjectTab = ({ props }) => {
+type ProjectTabProps = {
+    project: ProjectType;
+};
 
-    const { project } = props;
+const ProjectTab = ({ project }: ProjectTabProps) => {
+
     const { content } = project;
-    const [useBiggerContainer, setUseBiggerContainer] = useState(false);
-
-    useEffect(() => {
-        setUseBiggerContainer(content.images.length > 10);
-    }, [props])
+    const useBiggerContainer = content.images.length > 10;
 
     return (
-      <div className={styles.project_tab_container}>
-          <TabView className={styles.tabview}>
+      <div className={styles['project_tab_container']}>
+          <TabView className={styles['tabview']}>
               <TabPanel
                   header='Fotos'
-                  className={styles.information_container}
+                  className={styles['information_container']}
               >
                   <section>
                       <h2>Imagenes</h2>
@@ -31,14 +30,14 @@ const ProjectTab = ({ props }) => {
                           value={content.images}
                           numVisible={1}
                           numScroll={1}
-                          itemTemplate={ImageTemplate}
-                          className={`${useBiggerContainer ? styles.bigger_container : ''}`}
+                          itemTemplate={(image: string) => <ImageTemplate key={image} image={image} />}
+                          className={`${useBiggerContainer ? styles['bigger_container'] : ''}`}
                       />
                   </section>
               </TabPanel>
               <TabPanel
                   header='Videos'
-                  className={styles.information_container}
+                  className={styles['information_container']}
               >
                   <section>
                       <h2>Videos</h2>
@@ -46,7 +45,7 @@ const ProjectTab = ({ props }) => {
                           value={content.video.length === 0 ? [null] : content.video}
                           numVisible={1}
                           numScroll={1}
-                          itemTemplate={VideoTemplate}
+                          itemTemplate={(video: string | null) => <VideoTemplate key={video} video={video} />}
                       />
                   </section>
               </TabPanel>
@@ -55,28 +54,28 @@ const ProjectTab = ({ props }) => {
     );
 };
 
-const ImageTemplate = (props) => {
+const ImageTemplate = ({ image }: { image: string }) => {
 
     const [imageIsMobile, setImageIsMobile] = useState(false);
 
     useEffect(() => {
-        const imageUrl = projectImages[props];
+        const imageUrl = projectImages[image];
         if (!imageUrl) return;
 
         const img = new Image();
-        img.src = imageUrl;
-
         img.onload = () => {
             setImageIsMobile(img.width < 500);
         };
+        img.src = imageUrl;
 
+        return () => { img.onload = null; };
 
-    }, [props]);
+    }, [image]);
 
     return (
-        <div className={styles.carousel_container}>
+        <div className={styles['carousel_container']}>
             <PrimeImage
-                src={projectImages[props]}
+                src={projectImages[image]}
                 alt='imagen del proyecto'
                 loading="lazy"
                 width="100%"
@@ -88,23 +87,23 @@ const ImageTemplate = (props) => {
     );
 };
 
-const VideoTemplate = (props) => {
+const VideoTemplate = ({ video }: { video: string | null }) => {
     const [isLoading, setIsLoading] = useState(true);
 
     return (
-        <div className={styles.carousel_container}>
-            {props ? (
+        <div className={styles['carousel_container']}>
+            {video ? (
                 <>
                     { isLoading && (
                         <ProgressSpinner
-                            className={styles.spinner}
+                            className={styles['spinner']}
                             strokeWidth="4"
                             aria-label="Loading"
                             animationDuration="1s"
                         />
                     )}
                     <iframe
-                        src={props}
+                        src={video}
                         frameBorder="0"
                         allowFullScreen
                         loading="lazy"

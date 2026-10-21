@@ -1,27 +1,28 @@
-import Skills from '../../../json/skills.json';
+import profile from '../../../json/profile.json';
 import styles from "./what-i-do.module.css";
-import FrontEnd from '../../../assets/svg/frontend.svg';
-import BackEnd from '../../../assets/svg/backend.svg';
-import Admin from '../../../assets/svg/admin.svg';
-import Devops from '../../../assets/svg/devops.svg';
+import FrontEnd from '/assets/svg/frontend.svg';
+import BackEnd from '/assets/svg/backend.svg';
+import Admin from '/assets/svg/admin.svg';
+import Devops from '/assets/svg/devops.svg';
 import { useState } from "react";
-import Card from "../../card/card.jsx";
-import { technologiesKeys } from "../../../util/util.js";
+import Card from "../../card/card";
+import { technologiesKeys } from "../../../util/util";
+import type { SkillStack, SkillType } from '../../../type/skill.type';
 
 const WhatIDo = () => {
 
-    const [skills] = useState(Skills);
+    const [skills] = useState<SkillType[]>(profile.skills);
 
     return (
-        <section className={styles.main_body_container}>
-            <div className={styles.main_title}>
+        <section className={styles['main_body_container']}>
+            <div className={styles['main_title']}>
                 <p>Habilidades</p>
             </div>
-            <article className={styles.skills_container}>
+            <article className={styles['skills_container']}>
                 {skills.map((skill) => {
                     return (
                         <Card key={skill.id}>
-                            <Skill props={skill} />
+                            <Skill skill={skill} />
                         </Card>
                     )
                 })}
@@ -30,10 +31,10 @@ const WhatIDo = () => {
     );
 };
 
-const Skill = ({ props }) => {
+const Skill = ({ skill }: { skill: SkillType }) => {
 
-    const { title, description, file, stack  } = props;
-    const [area] = useState({
+    const { title, description, file, stack  } = skill;
+    const [area] = useState<Record<string, string>>({
         'frontend.svg': FrontEnd,
         'backend.svg': BackEnd,
         'admin.svg': Admin,
@@ -42,8 +43,8 @@ const Skill = ({ props }) => {
 
     return (
         <>
-            <div className={styles.skill_container}>
-                <div className={styles.skills_subcontainer}>
+            <div className={styles['skill_container']}>
+                <div className={styles['skills_subcontainer']}>
                     <img
                         src={area[file]}
                         alt={title}
@@ -52,27 +53,27 @@ const Skill = ({ props }) => {
                     <h2>{title}</h2>
                 </div>
                 <h4>{description}</h4>
-                <Stack props={stack} />
+                <Stack stack={stack} />
             </div>
         </>
     )
 
 }
 
-const Stack = ({ props }) => {
+const Stack = ({ stack }: { stack: SkillStack[] }) => {
     return (
         <>
-            <div className={styles.stack_container}>
-                {props.map(({ type, technologies }, index) => {
+            <div className={styles['stack_container']}>
+                {stack.map(({ type, technologies }, index) => {
                     return (
-                        <div key={index} className={styles.stack_subcontainer}>
-                            <p className={styles.type_style}>{type}</p>
-                            <div className={styles.languages_container}>
+                        <div key={index} className={styles['stack_subcontainer']}>
+                            <p className={styles['type_style']}>{type}</p>
+                            <div className={styles['languages_container']}>
                                 {technologies.map(({ technology, file, id }) => {
                                     return (
-                                        <div key={id} className={styles.languages_container_subcontainer}>
+                                        <div key={id} className={styles['languages_container_subcontainer']}>
                                             <p
-                                                className={styles.paragraph_description_from_subcontainer}
+                                                className={styles['paragraph_description_from_subcontainer']}
                                             >{technology}</p>
                                             <img
                                                 src={technologiesKeys[file]}
